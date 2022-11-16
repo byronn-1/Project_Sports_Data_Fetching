@@ -1,10 +1,12 @@
 
 
-export default function Country({country}){
+const Country = (props) => {
 
     return (
-        <>
-            <h2>{country.name}</h2>
-        </>
-    )
-}
+        <li>
+            <h2>{props.name}</h2>
+        </li>
+    );
+};
+
+export default Country;
